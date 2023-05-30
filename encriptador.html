@@ -1,0 +1,54 @@
+<html>
+      <head>
+            <meta charset="UTF-8">
+            <title>Encriptador de texto</title>
+            <meta name="viewport" content="width=device-width"> 
+            <link rel="stylesheet" href="reset.css">
+            <link rel="stylesheet" href="encriptador-style.css">
+            <style>
+              @import url('https://fonts.googleapis.com/css2?family=Raleway&display=swap');
+            </style>
+      </head>
+      <body>
+            <header>
+                  <img class="alura" src="imagenes/Vector.png">
+            </header>
+
+            <main class="contenedor-principal">
+              
+              <section class="encriptar-mensaje">
+                <div>
+                  <label for="mensaje"></label>
+                  <textarea id="mensaje-usuario" class="mensaje" placeholder="Escriba su texto aquí"></textarea>
+                </div>
+              
+                <div class="aviso-msj">                  
+                  <img src="imagenes/aviso.png" class="aviso"> 
+                  <p>Solo letras minúsculas, sin acentos</p>
+                <div class="botones">
+                    <button class="encriptar" onclick="encriptar()">Encriptar</button>
+                    <button class="desencriptar" onclick="desencriptar()">Desencriptar</button>
+                  </div>
+                                
+              </section>
+
+              <section class="rectangulo">
+            <div id="mensaje-final" class="text-center">
+                  <img src="imagenes/Muñeco.png" class="muneco">
+                  <p class ="no-msj">Ningún mensaje fue encontrado</p>
+                  <p class="mensaje2"> Escriba el texto que desea encriptar o desencriptar</p>
+                </div>
+                <div class="bton-copiar">
+                  <button class="copiar" onclick="copiar()">Copiar</button>
+                </div>
+              </section>
+            
+            </main>
+
+
+      </body>
+
+  <script type="text/javascript" src="encriptador.js"></script>
+
+
+</html>
